@@ -12,7 +12,7 @@ class PassthroughGenerator(width: Int) extends Module {
 
   printf("Print during simulation: Input is %d\n", io.in)
   // chisel printf has its own string interpolator too
-  printf(p"Print during simulation: IO is $io\n")
+  printf(p"Print during simulation: IO is \$io\n")
 }
 
 // Let's now generate modules with different widths
