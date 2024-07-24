@@ -44,7 +44,7 @@ Note that it is easiest to push to a repository if you set up SSH with Github, p
 
 ```sh
 git clone git@github.com:%REPOSITORY%.git
-cd $name$
+cd ${name}
 ```
 (The variables wrapped in `%` will be filled in by the template cleanup) <!-- #REMOVE-ON-CLEANUP# -->
 
@@ -67,7 +67,7 @@ For more information about a license, check out the [Github Docs](https://docs.g
 
 #### Commit your changes
 ```sh
-git commit -m 'Starting $name$'
+git commit -m 'Starting ${name}'
 git push origin main
 ```
 
@@ -82,7 +82,7 @@ sbt test
 
 Alternatively, if you use Mill:
 ```sh
-mill $name$.test
+mill ${name}.test
 ```
 
 You should see a whole bunch of output that ends with something like the following lines
